@@ -1,0 +1,13 @@
+{
+  "name": "korean-content-review",
+  "version": "0.1.0",
+  "description": "사이트와 콘텐츠의 한국어를 원문 보호·띄어쓰기·맞춤법·문체·UI 줄바꿈까지 한 번에 검수하는 스킬 묶음",
+  "author": {
+    "name": "김은광",
+    "url": "https://ekkorean.com"
+  },
+  "homepage": "https://github.com/eun7661010/korean-content-review",
+  "repository": "https://github.com/eun7661010/korean-content-review",
+  "license": "MIT",
+  "keywords": ["korean", "한국어", "proofreading", "spacing", "spelling", "style", "line-break", "claude-code", "codex"]
+}

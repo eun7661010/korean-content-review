@@ -1,0 +1,2 @@
+엔진별 {"chromium":{"error":3,"warn":8},"webkit":{"error":3,"warn":4},"firefox":{"error":2,"warn":0}}
+유형별 {"warn:long-eojeol-split":4,"warn:orphan":8,"error:mid-eojeol":6,"error:orphan":2}

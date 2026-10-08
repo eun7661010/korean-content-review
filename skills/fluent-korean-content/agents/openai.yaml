@@ -1,0 +1,4 @@
+interface:
+  display_name: "한국어 산출물 교정"
+  short_description: "문서와 사이트의 사용자 노출 한국어를 명확하게 교정합니다"
+  default_prompt: "$fluent-korean-content를 사용하여 문서나 사이트의 사용자 노출 한국어를 교정해 주세요."

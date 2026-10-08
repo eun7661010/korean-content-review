@@ -1,0 +1,2 @@
+엔진별 {"chromium":{"error":41,"warn":23},"webkit":{"error":41,"warn":21},"firefox":{"error":33,"warn":0}}
+유형별 {"warn:orphan":44,"error:orphan":16,"error:mid-eojeol":93,"error:josa-head":6}

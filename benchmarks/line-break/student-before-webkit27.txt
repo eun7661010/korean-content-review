@@ -1,0 +1,2 @@
+엔진별 {"webkit":{"error":43,"warn":23}}
+유형별 {"warn:orphan":21,"error:orphan":8,"error:mid-eojeol":31,"error:josa-head":2,"error:punct-tail":2,"warn:long-eojeol-split":2}

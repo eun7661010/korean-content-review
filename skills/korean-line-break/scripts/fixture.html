@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- 검출기 회귀용 픽스처. 기대값은 각 요소의 data-expect(없으면 위반 없음). node ko-wrap-check.mjs fixture.html --widths 400 --engines chromium,webkit,firefox -->
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>ko-wrap fixture</title>
+<style>
+body{font:16px/1.6 "Malgun Gothic","Apple SD Gothic Neo",sans-serif;margin:16px;width:360px}
+.box{border:1px dashed #aaa;margin:0 0 14px;padding:4px}
+.normal{word-break:normal}.keep{word-break:keep-all}
+.pretty{text-wrap-style:pretty}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.clamp{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nb{white-space:nowrap}
+</style></head><body>
+<p id="c1" data-expect="mid-eojeol" class="box normal" style="width:200px">국어 공부는 매일 꾸준히 하는 학생이 결국 이깁니다 그래서 오늘도 지문을 읽습니다</p>
+<p id="c2" class="box keep pretty" style="width:200px">국어 공부는 매일 꾸준히 하는 학생이 결국 이깁니다 그래서 오늘도 지문을 읽습니다</p>
+<p id="c3" data-expect="num-unit(warn)" class="box keep" style="width:250px">이번 시험은 지문 열두 개와 총 45 문항으로 이루어져 있습니다.</p>
+<p id="c4" class="box keep" style="width:300px">매일 지문 하나를 정해진 방법대로 끝까지 읽어 내면 됩니다.</p>
+<button id="c5" data-expect="control-wrapped" class="keep" style="width:80px">수강 신청하기</button>
+<p id="c6" data-expect="overflow" class="box keep" style="width:150px">주소 https://ekkorean.com/very/long/url/withoutbreaks</p>
+<p id="c7" class="box keep" style="width:150px;overflow-wrap:anywhere">주소 https://ekkorean.com/very/long/url/withoutbreaks</p>
+<p id="c8" data-expect="mid-eojeol" class="box normal" style="width:120px">오늘 수업에서는 학생<strong>들이</strong> 함께 읽었다</p>
+<p id="c9" class="box normal">숨은 글 <span class="sr">학생들이함께읽는아주긴숨은문장학생들이함께읽는아주긴숨은문장</span><span style="display:none">감춘글감춘글</span> 끝</p>
+<p id="c10" class="box keep" style="width:200px">첫째 줄입니다<br>둘째 줄<br>셋째 줄</p>
+<p id="c12" class="box keep" style="white-space:pre-line;width:300px">학생이 쓴 글
+두 번째 줄도   그대로</p>
+<p id="c13" class="box keep clamp" style="width:200px">국어 공부는 매일 꾸준히 하는 학생이 결국 이깁니다 그래서 오늘도 지문을 읽습니다 끝까지</p>
+<h2 id="c14" data-expect="heading-unbalanced" class="box keep" style="width:300px;font-size:24px">김은광 수능국어 겨울 특강 안내</h2>
+<p id="c15" data-expect="josa-head" class="box normal" style="width:110px">AI가 만든 문장은 어색하다</p>
+<div id="c16" data-expect="overflow" style="width:120px;white-space:nowrap" class="box">긴줄바꿈없는라벨텍스트입니다아주길어요</div>
+<!-- 기호+조사: keep-all이어도 Chromium(일부 Firefox)은 닫는 부호·원문자 뒤에서 끊는다 -->
+<p id="k1" data-expect="josa-head(chromium,firefox)" class="box keep" style="width:110px">가나다라마(가)와 비교</p>
+<p id="k2" data-expect="josa-head(chromium,firefox)" class="box keep" style="width:118px">가나다라〈보기〉에서 찾아</p>
+<p id="k3" data-expect="josa-head(chromium)" class="box keep" style="width:116px">가나다라마바㉠에서 말한</p>
+<p id="k4" class="box keep" style="width:110px">가나다라마<span class="nb">(가)와</span> 비교</p>
+<p id="k5" data-expect="punct-head(chromium)" class="box keep" style="width:150px">이 강의는 (등급컷·운영·독서·문학) 순서다</p>
+<p id="k6" class="box keep" style="width:180px">이 강의는 <span class="nb">(등급컷·운영·독서·문학)</span> 순서다</p>
+<p id="k7" data-expect="overflow" class="box keep" style="width:120px">春眠不覺曉處處聞啼鳥夜來風雨聲</p>
+<p id="k8" class="box" lang="zh-Hant" style="width:120px;word-break:normal">春眠不覺曉處處聞啼鳥夜來風雨聲</p>
+</body></html>

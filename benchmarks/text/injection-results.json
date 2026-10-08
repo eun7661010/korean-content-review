@@ -1,0 +1,598 @@
+{
+  "schema": 1,
+  "seed": 20261008,
+  "clean_sentences": 300,
+  "eligible_sentence_pool": 1490,
+  "corrupted_sentences": 233,
+  "skipped_no_applicable_error": 67,
+  "injection_counts": {
+    "bound-noun-join": 38,
+    "unit-join": 5,
+    "particle-split": 189,
+    "misspelling": 1,
+    "double-passive": 0
+  },
+  "available_sentence_counts": {
+    "bound-noun-join": 38,
+    "unit-join": 5,
+    "particle-split": 227,
+    "misspelling": 1,
+    "double-passive": 0
+  },
+  "selection": "300문장 균일 무작위 선택 후 가능한 유형 중 누적 주입 수가 적은 유형 우선, 동률·위치는 고정 시드로 선택",
+  "definitions": {
+    "recall": "오염 문장 중 주입 위치와 ±2자 이내 Finding이 있는 비율",
+    "precision": "오염 Finding 중 주입 위치와 정확히 겹치는 비율(0길이 경계 포함)",
+    "clean_false_alarms": "검수자가 깨끗한 집합으로 간주한 실제 300문장의 Finding 수; 문맥 정밀도 판정 아님"
+  },
+  "tools": {
+    "legacy-spacing": {
+      "clean_sentences": 300,
+      "clean_findings": 146,
+      "injected_sentences": 233,
+      "detected_sentences_near": 230,
+      "corrupted_findings": 340,
+      "true_positive_findings": 230,
+      "off_target_findings": 110,
+      "off_target_findings_near": 95,
+      "recall": 0.987124,
+      "precision": 0.676471,
+      "clean_findings_per_sentence": 0.486667
+    },
+    "spacing-strict": {
+      "clean_sentences": 300,
+      "clean_findings": 0,
+      "injected_sentences": 233,
+      "detected_sentences_near": 205,
+      "corrupted_findings": 205,
+      "true_positive_findings": 205,
+      "off_target_findings": 0,
+      "off_target_findings_near": 0,
+      "recall": 0.879828,
+      "precision": 1.0,
+      "clean_findings_per_sentence": 0.0
+    },
+    "spacing-all": {
+      "clean_sentences": 300,
+      "clean_findings": 187,
+      "injected_sentences": 233,
+      "detected_sentences_near": 230,
+      "corrupted_findings": 362,
+      "true_positive_findings": 230,
+      "off_target_findings": 132,
+      "off_target_findings_near": 114,
+      "recall": 0.987124,
+      "precision": 0.635359,
+      "clean_findings_per_sentence": 0.623333
+    },
+    "style-article": {
+      "clean_sentences": 300,
+      "clean_findings": 0,
+      "injected_sentences": 233,
+      "detected_sentences_near": 1,
+      "corrupted_findings": 1,
+      "true_positive_findings": 1,
+      "off_target_findings": 0,
+      "off_target_findings_near": 0,
+      "recall": 0.004292,
+      "precision": 1.0,
+      "clean_findings_per_sentence": 0.0
+    },
+    "combined-default": {
+      "clean_sentences": 300,
+      "clean_findings": 0,
+      "injected_sentences": 233,
+      "detected_sentences_near": 206,
+      "corrupted_findings": 206,
+      "true_positive_findings": 206,
+      "off_target_findings": 0,
+      "off_target_findings_near": 0,
+      "recall": 0.88412,
+      "precision": 1.0,
+      "clean_findings_per_sentence": 0.0
+    }
+  },
+  "by_type": {
+    "bound-noun-join": {
+      "legacy-spacing": {
+        "clean_sentences": 38,
+        "clean_findings": 26,
+        "injected_sentences": 38,
+        "detected_sentences_near": 38,
+        "corrupted_findings": 64,
+        "true_positive_findings": 38,
+        "off_target_findings": 26,
+        "off_target_findings_near": 22,
+        "recall": 1.0,
+        "precision": 0.59375,
+        "clean_findings_per_sentence": 0.684211
+      },
+      "spacing-strict": {
+        "clean_sentences": 38,
+        "clean_findings": 0,
+        "injected_sentences": 38,
+        "detected_sentences_near": 37,
+        "corrupted_findings": 37,
+        "true_positive_findings": 37,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.973684,
+        "precision": 1.0,
+        "clean_findings_per_sentence": 0.0
+      },
+      "spacing-all": {
+        "clean_sentences": 38,
+        "clean_findings": 27,
+        "injected_sentences": 38,
+        "detected_sentences_near": 38,
+        "corrupted_findings": 65,
+        "true_positive_findings": 38,
+        "off_target_findings": 27,
+        "off_target_findings_near": 23,
+        "recall": 1.0,
+        "precision": 0.584615,
+        "clean_findings_per_sentence": 0.710526
+      },
+      "style-article": {
+        "clean_sentences": 38,
+        "clean_findings": 0,
+        "injected_sentences": 38,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.0,
+        "precision": null,
+        "clean_findings_per_sentence": 0.0
+      },
+      "combined-default": {
+        "clean_sentences": 38,
+        "clean_findings": 0,
+        "injected_sentences": 38,
+        "detected_sentences_near": 37,
+        "corrupted_findings": 37,
+        "true_positive_findings": 37,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.973684,
+        "precision": 1.0,
+        "clean_findings_per_sentence": 0.0
+      }
+    },
+    "unit-join": {
+      "legacy-spacing": {
+        "clean_sentences": 5,
+        "clean_findings": 3,
+        "injected_sentences": 5,
+        "detected_sentences_near": 5,
+        "corrupted_findings": 8,
+        "true_positive_findings": 5,
+        "off_target_findings": 3,
+        "off_target_findings_near": 3,
+        "recall": 1.0,
+        "precision": 0.625,
+        "clean_findings_per_sentence": 0.6
+      },
+      "spacing-strict": {
+        "clean_sentences": 5,
+        "clean_findings": 0,
+        "injected_sentences": 5,
+        "detected_sentences_near": 5,
+        "corrupted_findings": 5,
+        "true_positive_findings": 5,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "clean_findings_per_sentence": 0.0
+      },
+      "spacing-all": {
+        "clean_sentences": 5,
+        "clean_findings": 8,
+        "injected_sentences": 5,
+        "detected_sentences_near": 5,
+        "corrupted_findings": 13,
+        "true_positive_findings": 5,
+        "off_target_findings": 8,
+        "off_target_findings_near": 8,
+        "recall": 1.0,
+        "precision": 0.384615,
+        "clean_findings_per_sentence": 1.6
+      },
+      "style-article": {
+        "clean_sentences": 5,
+        "clean_findings": 0,
+        "injected_sentences": 5,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.0,
+        "precision": null,
+        "clean_findings_per_sentence": 0.0
+      },
+      "combined-default": {
+        "clean_sentences": 5,
+        "clean_findings": 0,
+        "injected_sentences": 5,
+        "detected_sentences_near": 5,
+        "corrupted_findings": 5,
+        "true_positive_findings": 5,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "clean_findings_per_sentence": 0.0
+      }
+    },
+    "particle-split": {
+      "legacy-spacing": {
+        "clean_sentences": 189,
+        "clean_findings": 81,
+        "injected_sentences": 189,
+        "detected_sentences_near": 187,
+        "corrupted_findings": 268,
+        "true_positive_findings": 187,
+        "off_target_findings": 81,
+        "off_target_findings_near": 70,
+        "recall": 0.989418,
+        "precision": 0.697761,
+        "clean_findings_per_sentence": 0.428571
+      },
+      "spacing-strict": {
+        "clean_sentences": 189,
+        "clean_findings": 0,
+        "injected_sentences": 189,
+        "detected_sentences_near": 163,
+        "corrupted_findings": 163,
+        "true_positive_findings": 163,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.862434,
+        "precision": 1.0,
+        "clean_findings_per_sentence": 0.0
+      },
+      "spacing-all": {
+        "clean_sentences": 189,
+        "clean_findings": 97,
+        "injected_sentences": 189,
+        "detected_sentences_near": 187,
+        "corrupted_findings": 284,
+        "true_positive_findings": 187,
+        "off_target_findings": 97,
+        "off_target_findings_near": 83,
+        "recall": 0.989418,
+        "precision": 0.658451,
+        "clean_findings_per_sentence": 0.513228
+      },
+      "style-article": {
+        "clean_sentences": 189,
+        "clean_findings": 0,
+        "injected_sentences": 189,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.0,
+        "precision": null,
+        "clean_findings_per_sentence": 0.0
+      },
+      "combined-default": {
+        "clean_sentences": 189,
+        "clean_findings": 0,
+        "injected_sentences": 189,
+        "detected_sentences_near": 163,
+        "corrupted_findings": 163,
+        "true_positive_findings": 163,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.862434,
+        "precision": 1.0,
+        "clean_findings_per_sentence": 0.0
+      }
+    },
+    "misspelling": {
+      "legacy-spacing": {
+        "clean_sentences": 1,
+        "clean_findings": 0,
+        "injected_sentences": 1,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.0,
+        "precision": null,
+        "clean_findings_per_sentence": 0.0
+      },
+      "spacing-strict": {
+        "clean_sentences": 1,
+        "clean_findings": 0,
+        "injected_sentences": 1,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.0,
+        "precision": null,
+        "clean_findings_per_sentence": 0.0
+      },
+      "spacing-all": {
+        "clean_sentences": 1,
+        "clean_findings": 0,
+        "injected_sentences": 1,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 0.0,
+        "precision": null,
+        "clean_findings_per_sentence": 0.0
+      },
+      "style-article": {
+        "clean_sentences": 1,
+        "clean_findings": 0,
+        "injected_sentences": 1,
+        "detected_sentences_near": 1,
+        "corrupted_findings": 1,
+        "true_positive_findings": 1,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "clean_findings_per_sentence": 0.0
+      },
+      "combined-default": {
+        "clean_sentences": 1,
+        "clean_findings": 0,
+        "injected_sentences": 1,
+        "detected_sentences_near": 1,
+        "corrupted_findings": 1,
+        "true_positive_findings": 1,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "clean_findings_per_sentence": 0.0
+      }
+    },
+    "double-passive": {
+      "legacy-spacing": {
+        "clean_sentences": 0,
+        "clean_findings": 0,
+        "injected_sentences": 0,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": null,
+        "precision": null,
+        "clean_findings_per_sentence": null
+      },
+      "spacing-strict": {
+        "clean_sentences": 0,
+        "clean_findings": 0,
+        "injected_sentences": 0,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": null,
+        "precision": null,
+        "clean_findings_per_sentence": null
+      },
+      "spacing-all": {
+        "clean_sentences": 0,
+        "clean_findings": 0,
+        "injected_sentences": 0,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": null,
+        "precision": null,
+        "clean_findings_per_sentence": null
+      },
+      "style-article": {
+        "clean_sentences": 0,
+        "clean_findings": 0,
+        "injected_sentences": 0,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": null,
+        "precision": null,
+        "clean_findings_per_sentence": null
+      },
+      "combined-default": {
+        "clean_sentences": 0,
+        "clean_findings": 0,
+        "injected_sentences": 0,
+        "detected_sentences_near": 0,
+        "corrupted_findings": 0,
+        "true_positive_findings": 0,
+        "off_target_findings": 0,
+        "off_target_findings_near": 0,
+        "recall": null,
+        "precision": null,
+        "clean_findings_per_sentence": null
+      }
+    }
+  },
+  "examples": [
+    {
+      "type": "bound-noun-join",
+      "before": "답을 맞히는 데만 집중하는 거야.",
+      "after": "답을 맞히는데만 집중하는 거야."
+    },
+    {
+      "type": "unit-join",
+      "before": "가 화작을 풀 때 몇 분이 걸리나요?",
+      "after": "녀가 화작을 풀 때 몇분이 걸리나요?"
+    },
+    {
+      "type": "particle-split",
+      "before": "3단계: 평가원의 논리와 비교한다",
+      "after": "3단계: 평가원의 논리 와 비교한다"
+    },
+    {
+      "type": "misspelling",
+      "before": "데 이 논쟁은 질문 자체가 잘못됐어.",
+      "after": "데 이 논쟁은 질문 자체가 잘못됬어."
+    }
+  ],
+  "evidence": {
+    "dataset_sha256": "94c7f0397d25b56de374a1f1db6144570edb7316b1339a5dadd8ff12f8ab3de8",
+    "engine_sha256": "b0cf21441ce7bc38716eef8b39b5157871962af29df375f1cfa5042549981b43",
+    "pages": [
+      {
+        "source": "https://ekkorean.com",
+        "sha256": "0c31f499d4aab7c8850e0043c775ac16aef3bcedc2ee753641e8742d1a4507a2"
+      },
+      {
+        "source": "https://ekkorean.com/guide",
+        "sha256": "2c3d762c8d541db6af5530f3654c82cfe0c268dd01901314a517acf22be0e3eb"
+      },
+      {
+        "source": "https://ekkorean.com/guide/prologue",
+        "sha256": "70792e03b54906936502f2b577cf3647221ef234ba0fda9c57639578160f8f23"
+      },
+      {
+        "source": "https://ekkorean.com/guide/chapter-1",
+        "sha256": "2a1b76fca7487dd2bf954bf554e686747e3cf8800763507ed6f5e60852a07f33"
+      },
+      {
+        "source": "https://ekkorean.com/guide/chapter-2",
+        "sha256": "592ca2f83728458419e8ca88db617198b25512b98bd6c443bb8a7115b1214f32"
+      },
+      {
+        "source": "https://ekkorean.com/guide/chapter-3",
+        "sha256": "52029836e3a9bb1f9d4a4219e791ecaee73b542cabe1d5f42802a25437ce8a99"
+      },
+      {
+        "source": "https://ekkorean.com/cognitive-engineering-korean",
+        "sha256": "6f379ac74c12ded283988a5c17d725d2a7a2c328704e303e4af0d30f144549f9"
+      },
+      {
+        "source": "https://ekkorean.com/60korean",
+        "sha256": "aa93fed9ab09606cc1888547a9b249fb1f6cf464e5b1b0bf587d761451cb5d80"
+      },
+      {
+        "source": "https://ekkorean.com/resources",
+        "sha256": "39509109e5278cef4f602f7f0a50bbd25cd4d2b20dcf740293c16cf403b72445"
+      },
+      {
+        "source": "https://ekkorean.com/suneung-ebs-2026",
+        "sha256": "47a37a6e94d3a0f258b64abb6fc316445ce6c76ec3e1e5c68e419860bada3f41"
+      },
+      {
+        "source": "https://ekkorean.com/columns",
+        "sha256": "3a51ff3b271871d737db2a387f192a0baf61c742b2e17ba5a8aa3310a5f9e0dc"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-04-16-questions-need-structure-not-will",
+        "sha256": "c0f8b6611ebd0a9e5ff438c2c366460c5f1ef39fc0f01ad8453a5ff4670aff95"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-classical-literature",
+        "sha256": "d64236cf0d8ee6a58c2e72e3ec835e65d6737c2b86e5f7f99668112aa9e03c8c"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-ebs-usage",
+        "sha256": "79e1821c939946818c611bd4cd857f86aee38a34cc8341da027971568ab8d1de"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-elective-choice",
+        "sha256": "d431bc6c4955544ab2fbbdba8fd2d2cb752566b6a43729aa87222e70589fd902"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-exam-panic-recovery",
+        "sha256": "63f415b9242366a1d3cef1f2866b84be4bd10a1372b0fa040f8db16eca1aa898"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-giving-up-korean",
+        "sha256": "adc63efae26d58cf546f8fde5d8ed4e95aefdca9738eb4da6c419cf8ad19d498"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-intuition-trap",
+        "sha256": "defdc667deadf67bb53182df263cbeeda55f3ceb7eba051e96919aeada76d0ae"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-lectures-vs-practice",
+        "sha256": "c124ba8d9ae3ca1accf2d441a0df05eaf147b9624125a6f2980388bbb41a95e5"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-let-go-parenting",
+        "sha256": "77c109a19dd53ff1006ed8bcc2b2ebf26b29eec40cbb18ad6e32a4e2d4636911"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-literature-analysis",
+        "sha256": "1c40c4ad1b2c59c1dde6a8d3a46399a434f97ee8ddddc26b0fdc3411bb0a99d2"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-math-brain-korean",
+        "sha256": "fb1fc72dc250ffbffc90333e074bf5285888630e2d4ba82e9d405c98063956f5"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-nonfiction-myth",
+        "sha256": "3e56b371f8bb0f1c9b235b9cf14dc3b71f9491b4b8989ea1f3ba67cd29dae75d"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-nonlinear-growth",
+        "sha256": "3a68f84c10e06c68fdfbd7f388fc70ebf9f4e1d3953dc591826c13cef2da0270"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-not-more-problems",
+        "sha256": "82f22933e928f660ddee200464bee5669048afa068e3b2f4673f38e0e41a7e03"
+      },
+      {
+        "source": "https://ekkorean.com/columns/2026-april-openbook-mindset",
+        "sha256": "668de7a185c09678bb1347e9f262616d4718d85aa7ceb251184851a6700cb44f"
+      },
+      {
+        "source": "https://ekkorean.com/books/dokseo-kwang-art",
+        "sha256": "7b5c817ecf1d1047a0c38abb22a21767ff05d958b9622c0c5551e60e3b602722"
+      },
+      {
+        "source": "https://ekkorean.com/books/dokseo-kwang-eco",
+        "sha256": "01ba51cf17f58612c0912131430eaf14d917c46b282f5c17fdcbcf0e328f8db4"
+      },
+      {
+        "source": "https://ekkorean.com/books/dokseo-kwang-law",
+        "sha256": "1a2ec707d00e76377719da5d149d48d7e8e28c86faa723be1c38ff6a2bb36084"
+      },
+      {
+        "source": "https://ekkorean.com/books/dokseo-kwang-phil",
+        "sha256": "d7e38388b5ad72649cdee02ae738a0698f2249130f1c15d9783c71fa2dcead13"
+      }
+    ],
+    "legacy_sha256": {
+      "spacing": "ed0adac57fbc68f11b3a052bfc595d8d302a596ca78e490156db1c3cf79c67e3"
+    }
+  },
+  "versions": {
+    "python": "3.13.14",
+    "kiwipiepy": "0.23.1"
+  },
+  "external": {
+    "site_gets": 0,
+    "nara_posts": 0,
+    "nara_excluded": true
+  },
+  "limitations": [
+    "주입 위치 검출은 올바른 교정 제안·자동 수정 성공을 의미하지 않는다.",
+    "표기 사전·과거형 이중 피동 등 제한된 오류 유형의 실험이며 실제 오류 분포를 대표하지 않는다.",
+    "한 번/한번처럼 의미에 따라 허용되는 대안은 단위 오류 주입에서 제외한다.",
+    "적용 가능한 오류가 없는 선택 문장은 깨끗한 평가에만 포함한다."
+  ]
+}

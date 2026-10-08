@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "corpus": {
+    "site_pages": 30,
+    "site_attempted_pages": 30,
+    "categories": {
+      "랜딩·서비스 소개": 6,
+      "학습 안내": 5,
+      "칼럼": 15,
+      "교재 소개": 4
+    },
+    "site_blocks": 2656,
+    "original_fixtures": 4
+  },
+  "spacing": {
+    "A": {
+      "chars": 106181,
+      "protected_chars": 11855,
+      "legacy_edits": 2107,
+      "new_suggestions": 2184,
+      "legacy_protected_edits": 301,
+      "legacy_protected_changed_chars": 301,
+      "new_protected_edits": 0,
+      "new_protected_changed_chars": 0,
+      "legacy_original_edits": 0,
+      "legacy_original_changed_chars": 0,
+      "new_original_edits": 0,
+      "new_original_changed_chars": 0,
+      "suppressed": 313,
+      "suppression_kinds": {
+        "term": 174,
+        "quote": 139
+      },
+      "protected_ratio": 0.111649
+    },
+    "B": {
+      "chars": 1399,
+      "protected_chars": 1274,
+      "legacy_edits": 16,
+      "new_suggestions": 1,
+      "legacy_protected_edits": 15,
+      "legacy_protected_changed_chars": 15,
+      "new_protected_edits": 0,
+      "new_protected_changed_chars": 0,
+      "legacy_original_edits": 8,
+      "legacy_original_changed_chars": 8,
+      "new_original_edits": 0,
+      "new_original_changed_chars": 0,
+      "suppressed": 22,
+      "suppression_kinds": {
+        "original": 9,
+        "quote": 11,
+        "tag": 2
+      },
+      "examples": [
+        {
+          "original": "이 몸 삼기실 제 님을 조차 삼기시니",
+          "legacy": "이 몸 삼 기실 제 님을 조차 삼 기시니",
+          "source": "classical.md"
+        },
+        {
+          "original": "한ᄉᆡᆼ 緣分이며 하ᄂᆞᆯ 모ᄅᆞᆯ 일이런가",
+          "legacy": "한ᄉᆡᆼ 緣分이며 하ᄂᆞᆯ 모ᄅᆞᆯ 일 이런가",
+          "source": "classical.md"
+        },
+        {
+          "original": "멀위랑 ᄃᆞ래랑 먹고 靑山애 살어리랏다",
+          "legacy": "멀위랑 ᄃᆞ래랑 먹고 靑山 애 살어리랏다",
+          "source": "classical.md"
+        }
+      ],
+      "protected_ratio": 0.91065
+    }
+  },
+  "spell": {
+    "A": {
+      "chunks": 16,
+      "parsed": 3,
+      "failed": 13,
+      "legacy_suggestions": 129,
+      "new_suggestions": 94,
+      "legacy_protected": 30,
+      "legacy_applied_protected_edits": 27,
+      "new_protected": 0,
+      "suppressed": 30,
+      "kinds": {
+        "quote": 21,
+        "term": 9
+      },
+      "rejected": {
+        "source_mismatch": 0,
+        "original_mismatch": 4,
+        "invalid_offsets": 1,
+        "no_suggestion": 0
+      },
+      "no_change": 0
+    },
+    "B": {
+      "chunks": 3,
+      "parsed": 3,
+      "failed": 0,
+      "legacy_suggestions": 47,
+      "new_suggestions": 1,
+      "legacy_protected": 27,
+      "legacy_applied_protected_edits": 42,
+      "new_protected": 0,
+      "suppressed": 27,
+      "kinds": {
+        "original": 17,
+        "quote": 8,
+        "tag": 1,
+        "term": 1
+      },
+      "rejected": {
+        "source_mismatch": 0,
+        "original_mismatch": 6,
+        "invalid_offsets": 1,
+        "no_suggestion": 12
+      },
+      "no_change": 0
+    }
+  },
+  "style": {
+    "rule_count": 20,
+    "counts": {
+      "cliche-repeat": 0,
+      "double-passive": 0,
+      "loan-content": 0,
+      "loan-leadership": 0,
+      "loan-message": 0,
+      "long-sentence": 23,
+      "mixed-register": 55,
+      "number-unit": 0,
+      "spelling-andwae": 0,
+      "spelling-days": 0,
+      "spelling-doet": 0,
+      "spelling-how": 0,
+      "spelling-role": 0,
+      "spelling-soon": 0,
+      "spelling-wenji": 0,
+      "translation-by": 2,
+      "translation-from": 1,
+      "translation-in": 0,
+      "translation-possible": 0,
+      "translation-through": 0
+    },
+    "total": 81,
+    "suppressed": 45,
+    "sample_size": 60,
+    "precision": "검수자 판정 대기"
+  },
+  "external": {
+    "site_gets": 31,
+    "nara_posts": 19
+  },
+  "versions": {
+    "python": "3.13.14",
+    "kiwipiepy": "0.23.1"
+  },
+  "evidence": {
+    "engine_sha256": "00b61d646d6e42367469e30fcfc8a1e2260385f7f2afae356b12a07d81a606c9",
+    "input_sha256": "e6bff62b09e66cc35c11e8a40bd6ad9926b0cbc344595c8e2c260aaa757a382f",
+    "legacy_sha256": {
+      "spacing": "ed0adac57fbc68f11b3a052bfc595d8d302a596ca78e490156db1c3cf79c67e3",
+      "spell": "0fa66bb001cb13ecb0bd3113f20149063de9f7dc62fb9eda796311c726c40ffc"
+    }
+  },
+  "speed": {
+    "spacing_A": {
+      "legacy_ms_per_1000_chars": 10.545,
+      "new_ms_per_1000_chars": 17.642
+    },
+    "spacing_B": {
+      "legacy_ms_per_1000_chars": 5.962,
+      "new_ms_per_1000_chars": 11.701
+    },
+    "spell_postprocessing": {
+      "legacy_ms_per_1000_chars": 0.697,
+      "new_ms_per_1000_chars": 0.766
+    },
+    "style_ms_per_1000_chars": 0.623,
+    "note": "모델 초기화·네트워크 대기 제외. 동일 증거의 캐시 재실행은 최초 실측 시간을 유지한다."
+  }
+}
